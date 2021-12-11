@@ -4,7 +4,7 @@ import java.util.List;
 public class CLASS {
     public static void main(String[] args) {
         class Student{
-            private Student name;
+            private String name;
             private  int a,b,c,d,e;
 
             public  Student(String name, int a, int b,int c,int d,int e) {
@@ -15,33 +15,44 @@ public class CLASS {
                 this.d = d;
                 this.e = e;
             }
+
+            public Student(String 최인하, int a, int b, int c) {
+            }
+
             public String getName(){
                 return name;
             }
-            public String getA(){
+            public int getA(){
                 return a;
             }
-            public String getB(){
+            public int getB(){
                 return b;
             }
-            public String getC(){
+            public int getC(){
                 return c;
             }
-            public String getD(){
+            public int getD(){
                 return d;
             }
-            public String getE(){
+            public int getE(){
                 return e;
             }
             static List<Student> student = Arrays.asList(
                     new Student("최인하", 100, 99, 100),
-                    new Student("홍길동", 80, 81, 83)
+                    new Student("박인하", 80, 81, 83),
+                    new Student("최인하", 90, 61, 93),
+                    new Student("고인하", 78, 88, 88)
             );
 
-            public class StudentTest{
+            class StudentTest{
                 public static void main(String[] args) {
-                    System.out.println("입력 :" StudentTest.);
+                    System.out.println("1. 학생 성적 등록" );
+                    System.out.println("2. 학생 조회" );
+                    System.out.println("3. 성적 출력" );
+                    System.out.println("4. 학생 삭제" );
+                    System.out.println("8. 종료(종료 시 8 입력)" );
                 }
+
             }
         }
     }
